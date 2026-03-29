@@ -2,6 +2,7 @@
 
 import React, { useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { saveIhbar, generateIhbarId, fileToBase64 } from "@/lib/ihbar-store";
 
 export default function IhbarPage() {
@@ -75,9 +76,7 @@ export default function IhbarPage() {
       {/* Navbar */}
       <nav className="relative z-20 flex items-center justify-between px-6 md:px-10 py-5 max-w-5xl mx-auto w-full">
         <Link href="/" className="flex items-center gap-3 group">
-          <div className="w-9 h-9 bg-gradient-to-br from-indigo-600 to-blue-500 rounded-xl flex items-center justify-center shadow-md shadow-indigo-500/25 group-hover:shadow-indigo-500/40 transition-shadow">
-            <span className="text-white font-black text-base">M</span>
-          </div>
+          <Image src="/logo.png" alt="Mercek Logo" width={36} height={36} className="rounded-xl shadow-md shadow-indigo-500/25 group-hover:shadow-indigo-500/40 transition-shadow" />
           <span className="font-black text-slate-700 text-lg tracking-tight">Mercek</span>
         </Link>
         <Link

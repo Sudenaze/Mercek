@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import IlanlarSection from "@/components/IlanlarSection";
 import IlanlarPopup from "@/components/IlanlarPopup";
 
@@ -13,9 +14,7 @@ export default function Home() {
       {/* Navbar */}
       <nav className="relative z-20 flex items-center justify-between px-6 md:px-10 py-5 max-w-7xl mx-auto w-full">
         <div className="flex items-center gap-3">
-          <div className="w-10 h-10 bg-gradient-to-br from-indigo-600 to-blue-500 rounded-xl flex items-center justify-center shadow-lg shadow-indigo-500/30">
-            <span className="text-white font-black text-lg">M</span>
-          </div>
+          <Image src="/logo.png" alt="Mercek Logo" width={40} height={40} className="rounded-xl shadow-lg shadow-indigo-500/30" />
           <span className="font-black text-slate-800 text-xl tracking-tight">Mercek</span>
         </div>
         <div className="hidden md:flex items-center gap-8">

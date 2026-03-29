@@ -2,6 +2,7 @@
 
 import { notFound } from "next/navigation";
 import Link from "next/link";
+import Image from "next/image";
 import { mockPersons, MatchedReport } from "@/lib/mock-persons";
 
 const statusConfig = {
@@ -167,9 +168,7 @@ export default function VakaDetailPage({ params }: { params: { id: string } }) {
       {/* Navbar */}
       <nav className="relative z-20 flex items-center justify-between px-6 md:px-10 py-5 max-w-7xl mx-auto w-full border-b border-slate-200 bg-white/70 backdrop-blur-sm sticky top-0">
         <Link href="/" className="flex items-center gap-3 group">
-          <div className="w-9 h-9 bg-gradient-to-br from-indigo-600 to-blue-500 rounded-xl flex items-center justify-center shadow-md shadow-indigo-500/25">
-            <span className="text-white font-black text-base">M</span>
-          </div>
+          <Image src="/logo.png" alt="Mercek Logo" width={36} height={36} className="rounded-xl shadow-md shadow-indigo-500/25" />
           <span className="font-black text-slate-800 text-lg tracking-tight">Mercek</span>
         </Link>
         <div className="flex items-center gap-3">
