@@ -24,9 +24,9 @@
 
 ## Problem
 
-Türkiye'de kayıp vakalarında bilgi yönetimi büyük ölçüde sosyal medyaya bırakılmıştır. Aile bireyleri dağınık paylaşımlar yaparken gönüllüler ve koordinatörler bu bilgileri manuel olarak takip etmektedir. Kritik ilk 72 saat koordinasyon eksikliği ve bilgi kirliliği içinde geçmektedir.
+Türkiye'de kayıp vakalarında bilgi yönetiminde yaşanan çeşitli krizler, problemler ve panik sebebiyle yeterince etkin biçimde tamamlanamayabiliyor. Kayıp birey hakkındaki dağınık paylaşımlar yapılabiliyorken gönüllüler ve koordinatörler bu bilgileri manuel olarak takip etmektedir. Kritik ilk 72 saat koordinasyon eksikliği ve bilgi kirliliği içinde geçmektedir.
 
-**Mercek**, bu süreci merkezi ve yapay zeka destekli bir platforma taşır.
+**Mercek**, bu süreci merkezi ve yapay zeka destekli bir platforma taşır ve organize olmamızı sağlayarak kayıp vakalarındaki insanı sorunları önlemeye yararken aynı zamanda kritik zamanın da kaybolmasının önüne geçmeyi hedefler.
 
 ---
 
