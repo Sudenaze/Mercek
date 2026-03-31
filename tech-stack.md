@@ -55,9 +55,3 @@ Proje şu an **mock data + localStorage** mimarisi kullanmaktadır:
 
 Bu mimari, backend entegrasyonu olmadan tam işlevsel bir demo sağlar ve gerçek bir veritabanına (Supabase, PostgreSQL vb.) geçişe hazır tasarlanmıştır.
 
----
-
-## Test
-
-- **Vitest** + **@testing-library/react** ile 50+ birim ve entegrasyon testi
-- `npm run test` ile çalıştırılır
