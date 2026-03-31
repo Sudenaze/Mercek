@@ -59,12 +59,6 @@ Detaylar için → [tech-stack.md](tech-stack.md)
 
 ---
 
-## Demo Video
-
-> Yakında eklenecek
-
----
-
 ## Repo Yapısı
 
 ```
