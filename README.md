@@ -1,35 +1,61 @@
 # Mercek — Dijital Komuta Merkezi
 
-Kayıp vakalarında ilk 72 saatteki bilgi kirliliğini önlemek için geliştirilmiş, sivil ihbarları yapay zeka ile eş zamanlı analiz eden modern yönetim platformu.
+> Kayıp vakalarında ilk 72 saatteki bilgi kirliliğini önlemek için geliştirilmiş, sivil ihbarları yapay zeka ile eş zamanlı analiz eden modern yönetim platformu.
+
+<br/>
+
+![Mercek Ana Ekran](assets/Ana_Ekran_Görsel1.png)
+
+---
+
+## Canlı Demo
+
+**[mercekupschool.netlify.app](https://mercekupschool.netlify.app/)**
 
 ---
 
 ## Problem
 
-Türkiye'de her yıl binlerce kayıp vakası yaşanmaktadır. Mevcut süreçte aile bireyleri sosyal medyada dağınık paylaşımlar yaparken gönüllüler ve koordinatörler bu bilgileri manuel olarak takip etmektedir. Bu durum:
+Türkiye'de kayıp vakalarında bilgi yönetimi büyük ölçüde sosyal medyaya bırakılmıştır. Aile bireyleri dağınık paylaşımlar yaparken gönüllüler ve koordinatörler bu bilgileri manuel olarak takip etmektedir. Kritik ilk 72 saat koordinasyon eksikliği ve bilgi kirliliği içinde geçmektedir.
 
-- Mükerrer ihbarların gözden kaçmasına
-- Kritik ilk saatlerin verimsiz geçmesine
-- Koordinasyon eksikliğine
-
-yol açmaktadır. Mercek, bu kaosa dijital bir komuta merkezi olarak müdahale eder.
+**Mercek**, bu süreci merkezi ve yapay zeka destekli bir platforma taşır.
 
 ---
 
 ## Özellikler
 
-- **Kayıp İlan Yönetimi** — Aile bireyleri kayıp ilanı oluşturabilir, fotoğraf ve detay ekleyebilir
-- **Sivil İhbar Sistemi** — Herkes ihbar bildirebilir, fotoğraf yükleyebilir
-- **AI Eşleştirme** — İhbarlar kayıp ilanlarıyla otomatik olarak eşleştirilir, benzerlik skoru gösterilir
-- **Görsel Analiz** — TensorFlow.js + COCO-SSD ile fotoğraflarda gerçek zamanlı nesne tespiti
-- **Tahmini Rota Haritası** — Birden fazla ihbar bulunan vakalarda harita üzerinde tahmini rota oluşturulur
-- **Admin Paneli** — Koordinatörler tüm vakaları, ihbarları ve medya içeriklerini yönetebilir
+| Özellik | Açıklama |
+|---|---|
+| **Kayıp İlanı Yönetimi** | Aile bireyleri fotoğraf ve detaylı bilgiyle ilan oluşturabilir |
+| **Sivil İhbar Sistemi** | Herkes konum, fotoğraf ve etiketle ihbar bildirebilir |
+| **AI Eşleştirme** | İhbarlar kayıp ilanlarıyla otomatik eşleştirilir, benzerlik skoru hesaplanır |
+| **Görsel Analiz** | TensorFlow.js + COCO-SSD ile tarayıcı içinde gerçek zamanlı nesne tespiti |
+| **Tahmini Rota Haritası** | Birden fazla ihbar bulunan vakalarda harita üzerinde rota oluşturulur |
+| **Koordinatör Paneli** | Tüm vakalar, ihbarlar, harita ve medya içerikleri tek ekranda yönetilir |
 
 ---
 
-## Yayın Linki
+## Ekran Görüntüleri
 
-**[https://mercekupschool.netlify.app/](https://mercekupschool.netlify.app/)**
+| Ana Sayfa | Kayıp İlanları |
+|---|---|
+| ![](assets/Ana_Ekran_Görsel2.png) | ![](assets/Kayıp_İlanları_Detay_Ekranı_Görsel1.png) |
+
+| Koordinatör Paneli — Harita | Koordinatör Paneli — Medya |
+|---|---|
+| ![](assets/Yetkili_Paneli_Harita_Ekranı.png) | ![](assets/Yetkili_Paneli_Medya_Ekranı.png) |
+
+---
+
+## Teknoloji Yığını
+
+- **Next.js 16** + **React 19** + **TypeScript**
+- **Tailwind CSS v4** — UI styling
+- **TensorFlow.js + COCO-SSD** — Tarayıcı içi nesne tespiti
+- **Leaflet / React-Leaflet** — İnteraktif harita
+- **Netlify** — Deployment
+
+Detaylar için → [tech-stack.md](tech-stack.md)
 
 ---
 
@@ -39,56 +65,20 @@ yol açmaktadır. Mercek, bu kaosa dijital bir komuta merkezi olarak müdahale e
 
 ---
 
-## Nasıl Çalıştırılır?
-
-### Gereksinimler
-
-- Node.js 18+
-- npm
-
-### Kurulum
-
-```bash
-# Repoyu klonla
-git clone https://github.com/Sudenaze/Mercek.git
-cd Mercek
-
-# Bağımlılıkları yükle
-npm install
-
-# Geliştirme sunucusunu başlat
-npm run dev
-```
-
-Tarayıcıda [http://localhost:3000](http://localhost:3000) adresini aç.
-
-### Build
-
-```bash
-npm run build
-npm start
-```
-
----
-
-## Klasör Yapısı
+## Repo Yapısı
 
 ```
 src/
-├── app/               # Next.js App Router sayfaları
-│   ├── page.tsx       # Ana sayfa
-│   ├── vakalar/       # Kayıp ilanları listesi ve detay
-│   ├── ihbar/         # İhbar bildirme formu
-│   ├── ilan-ver/      # Kayıp ilanı oluşturma
-│   └── admin/         # Koordinatör yönetim paneli
-├── components/        # Yeniden kullanılabilir UI bileşenleri
-└── lib/               # Veri modelleri, store'lar, mock veriler
-features/              # Özellik dokümantasyonu
-assets/                # Görseller ve ekran görüntüleri
+├── app/            # Sayfalar (Ana, Vakalar, İhbar, İlan Ver, Admin)
+├── components/     # UI bileşenleri (Harita, İlan listesi vb.)
+└── lib/            # Veri modelleri ve store'lar
+features/           # Özellik dokümantasyonu
+assets/             # Ekran görüntüleri ve görseller
+idea.md             # Problem tanımı ve AI'ın rolü
+user-flow.md        # Kullanıcı akışları
+tech-stack.md       # Teknoloji seçimleri
 ```
 
 ---
 
-## Takım
-
-Upschool AI Bootcamp — 2026
+## Upschool AI Bootcamp — 2026
