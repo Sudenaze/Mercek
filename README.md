@@ -1,36 +1,94 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Mercek — Dijital Komuta Merkezi
 
-## Getting Started
+Kayıp vakalarında ilk 72 saatteki bilgi kirliliğini önlemek için geliştirilmiş, sivil ihbarları yapay zeka ile eş zamanlı analiz eden modern yönetim platformu.
 
-First, run the development server:
+---
+
+## Problem
+
+Türkiye'de her yıl binlerce kayıp vakası yaşanmaktadır. Mevcut süreçte aile bireyleri sosyal medyada dağınık paylaşımlar yaparken gönüllüler ve koordinatörler bu bilgileri manuel olarak takip etmektedir. Bu durum:
+
+- Mükerrer ihbarların gözden kaçmasına
+- Kritik ilk saatlerin verimsiz geçmesine
+- Koordinasyon eksikliğine
+
+yol açmaktadır. Mercek, bu kaosa dijital bir komuta merkezi olarak müdahale eder.
+
+---
+
+## Özellikler
+
+- **Kayıp İlan Yönetimi** — Aile bireyleri kayıp ilanı oluşturabilir, fotoğraf ve detay ekleyebilir
+- **Sivil İhbar Sistemi** — Herkes ihbar bildirebilir, fotoğraf yükleyebilir
+- **AI Eşleştirme** — İhbarlar kayıp ilanlarıyla otomatik olarak eşleştirilir, benzerlik skoru gösterilir
+- **Görsel Analiz** — TensorFlow.js + COCO-SSD ile fotoğraflarda gerçek zamanlı nesne tespiti
+- **Tahmini Rota Haritası** — Birden fazla ihbar bulunan vakalarda harita üzerinde tahmini rota oluşturulur
+- **Admin Paneli** — Koordinatörler tüm vakaları, ihbarları ve medya içeriklerini yönetebilir
+
+---
+
+## Yayın Linki
+
+**[https://mercekupschool.netlify.app/](https://mercekupschool.netlify.app/)**
+
+---
+
+## Demo Video
+
+> Yakında eklenecek
+
+---
+
+## Nasıl Çalıştırılır?
+
+### Gereksinimler
+
+- Node.js 18+
+- npm
+
+### Kurulum
 
 ```bash
+# Repoyu klonla
+git clone https://github.com/Sudenaze/Mercek.git
+cd Mercek
+
+# Bağımlılıkları yükle
+npm install
+
+# Geliştirme sunucusunu başlat
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Tarayıcıda [http://localhost:3000](http://localhost:3000) adresini aç.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Build
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+npm run build
+npm start
+```
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+## Klasör Yapısı
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```
+src/
+├── app/               # Next.js App Router sayfaları
+│   ├── page.tsx       # Ana sayfa
+│   ├── vakalar/       # Kayıp ilanları listesi ve detay
+│   ├── ihbar/         # İhbar bildirme formu
+│   ├── ilan-ver/      # Kayıp ilanı oluşturma
+│   └── admin/         # Koordinatör yönetim paneli
+├── components/        # Yeniden kullanılabilir UI bileşenleri
+└── lib/               # Veri modelleri, store'lar, mock veriler
+features/              # Özellik dokümantasyonu
+assets/                # Görseller ve ekran görüntüleri
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+## Takım
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Upschool AI Bootcamp — 2026
