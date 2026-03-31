@@ -2,6 +2,8 @@
 
 Tüm kaynak kodları `src/` klasöründe bulunmaktadır. Bu dosya her özelliğin nerede implement edildiğini açıklar.
 
+> **Not:** Bu proje Next.js framework'ü kullandığından kaynak kodların tamamı `src/` klasöründe bulunmaktadır. `features/` klasörü özellik dokümantasyonunu içermektedir.
+
 ---
 
 ## Özellik Listesi
