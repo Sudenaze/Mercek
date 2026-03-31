@@ -14,6 +14,14 @@
 
 ---
 
+## Demo Video
+
+[![Mercek Demo Videosu](https://cdn.loom.com/sessions/thumbnails/a2ab070caad64578b1bfdcdc5fdbb5e4-with-play.gif)](https://www.loom.com/share/a2ab070caad64578b1bfdcdc5fdbb5e4)
+
+[Loom üzerinden izlemek için tıklayın](https://www.loom.com/share/a2ab070caad64578b1bfdcdc5fdbb5e4)
+
+---
+
 ## Problem
 
 Türkiye'de kayıp vakalarında bilgi yönetimi büyük ölçüde sosyal medyaya bırakılmıştır. Aile bireyleri dağınık paylaşımlar yaparken gönüllüler ve koordinatörler bu bilgileri manuel olarak takip etmektedir. Kritik ilk 72 saat koordinasyon eksikliği ve bilgi kirliliği içinde geçmektedir.
